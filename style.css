@@ -1,0 +1,41 @@
+.main {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background: repeating-conic-gradient(deepskyblue 5%, blue 10%, yellow 15%, purple 20%, green 25%, rosybrown 30%, deeppink 35%, aqua 40%, lime 45%, black 50%, maroon 55%, lavender 60%);
+    font-size: 40px;
+    animation: animate 10s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 0px;
+        left: 300px;
+        background: repeating-conic-gradient(green 5%, hotpink 10%);
+
+    }
+
+    50% {
+        top: 400px;
+        left: 300px;
+        background: repeating-conic-gradient(violet 5%, aqua 10%, yellow 15%);
+
+    }
+
+    75% {
+        top: 400px;
+        left: 0px;
+        background: repeating-conic-gradient(navy 5%, springgreen 10%, grey 15%, coral 20%);
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
